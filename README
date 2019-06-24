@@ -1,0 +1,10 @@
+Weather application designed for collecting and storing temperature measurements from indicated locations  in given time interval.
+
+Application gains access to API OpenWeatherMap with SSH key. 
+
+User can pass city name and then location name and ID is being saved to database. 
+App uses Quartz – Job Scheduler library which triggers download temperature from location with indicated frequency (in sec. ) 
+and add measurements to database
+
+Request: 
+[GET]/api/register/{city_name}/{frequency}
